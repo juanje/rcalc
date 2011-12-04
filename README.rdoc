@@ -1,0 +1,6 @@
+= rcalc
+
+A simple command line calculator
+
+:include:rcalc.rdoc
+

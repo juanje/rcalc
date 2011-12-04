@@ -1,0 +1,5 @@
+= rcalc
+
+Generate this with
+    rcalc rdoc
+After you have described your command line interface
