@@ -8,6 +8,11 @@ When /^the calculator divide the (\d+) by the (\d+)$/ do |arg1, arg2|
   raise('Command failed!') unless $?.success?
 end
 
+When /^the calculator substract the (\d+) to the (\d+)$/ do |arg1, arg2|
+  @output = `ruby bin/rcalc substract #{@first} #{@second}`.chomp
+  raise('Command failed!') unless $?.success?
+end
+
 When /^the calculator sum them$/ do
   @output = `ruby bin/rcalc sum #{@first} #{@second}`.chomp
   raise('Command failed!') unless $?.success?
