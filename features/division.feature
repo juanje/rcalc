@@ -1,13 +1,13 @@
 Feature: Division
 
     Scenario Outline: Divide two numbers
-    Given the input "<input>"
-    When the calculator is run
-    Then the output should be "<output>"
+    Given the number <first> and <second>
+    When the calculator divide the <first> by the <second>
+    Then the output should be "<result>"
 
     Examples:
-        | input | output |
-        | 4/2   | 2      |
-        | 20/4  | 5      |
+        | first | second | result |
+        | 4     |    2   | 2      |
+        | 20    |    4   | 5      |
 
 
