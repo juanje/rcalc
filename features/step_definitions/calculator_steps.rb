@@ -3,7 +3,7 @@ Given /^the number (\d+) and (\d+)$/ do |first, second|
   @second = second
 end
 
-When /^the calculator divide the (\d+) by the (\d+)$/ do |first, second|
+When /^the calculator divide the (\d+) by the (\d+)$/ do |arg1, arg2|
   @output = `ruby bin/rcalc divide #{@first} #{@second}`.chomp
   raise('Command failed!') unless $?.success?
 end
