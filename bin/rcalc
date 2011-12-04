@@ -21,15 +21,12 @@ program_desc 'A simple command line calculator'
 
 version Rcalc::VERSION
 
-# default vaule in case the operation goes wrong
-result = 0
-
 desc 'Sum two numbers'
 arg_name 'The two numbers to be summed'
 command :sum do |c|
   c.action do |global_options,options,args|
     raise ArgumentError,"Two numbers are needed" unless args.length == 2
-    result = args.first.to_i + args.last.to_i
+    puts args.first.to_i + args.last.to_i
   end
 end
 
@@ -38,7 +35,7 @@ arg_name 'One number and the one to be divided by'
 command :divide do |c|
   c.action do |global_options,options,args|
     raise ArgumentError,"Two numbers are needed" unless args.length == 2
-    result = args.first.to_i / args.last.to_i
+    puts args.first.to_i / args.last.to_i
   end
 end
 
@@ -47,7 +44,7 @@ arg_name 'One number and the one to be substracted'
 command :substract do |c|
   c.action do |global_options,options,args|
     raise ArgumentError,"Two numbers are needed" unless args.length == 2
-    result = args.first.to_i - args.last.to_i
+    puts args.first.to_i - args.last.to_i
   end
 end
 
@@ -56,21 +53,11 @@ arg_name 'Two numbers to be multiplied'
 command :multiply do |c|
   c.action do |global_options,options,args|
     raise ArgumentError,"Two numbers are needed" unless args.length == 2
-    result = args.first.to_i * args.last.to_i
+    puts args.first.to_i * args.last.to_i
   end
 end
 
-
-post do |global,command,options,args|
-  # Post logic here
-  # Use skips_post before a command to skip this
-  # block on that command only
-  puts result
-end
-
 on_error do |exception|
-  # Error logic here
-  # return false to skip default error handling
   true
 end
 
