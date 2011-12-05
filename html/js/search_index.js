@@ -1,1 +1,0 @@
-var search_data = {"index":{"searchIndex":["object","rcalc","readme"],"longSearchIndex":["object","rcalc",""],"info":[["Object","","Object.html","",""],["Rcalc","","Rcalc.html","",""],["README","","README_rdoc.html","","<p>rcalc\n<p>Describe your project here\n<p>rcalc\n"]]}}
