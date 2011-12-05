@@ -10,6 +10,7 @@ spec = Gem::Specification.new do |s|
 # Add your other files here if you make them
   s.files = %w(
 bin/rcalc
+lib/rcalc_version.rb
   )
   s.require_paths << 'lib'
   s.has_rdoc = true
