@@ -4,7 +4,7 @@ A simple command line calculator
 
 == Description
 
-This is a very simple and silly tool for educational purposes. It is meant to be a project for practise how to create a *command-suit* CLI using [[GLI|http://davetron5000.github.com/gli/]] and how to create a project *driven by behavior* with [[Cucumber|http://cukes.info/]].
+This is a very simple and silly tool for educational purposes. It is meant to be a project for practise how to create a <tt>command-suit</tt> CLI using {GLI}[http://davetron5000.github.com/gli/] and how to create a project <tt>driven by behavior</tt> with {Cucumber}[http://cukes.info/].
 
 == Install
 
