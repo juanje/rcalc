@@ -2,5 +2,38 @@
 
 A simple command line calculator
 
-:include:rcalc.rdoc
+== Description
+
+This is a very simple and silly tool for educational purposes. It is meant to be a project for practise how to create a *command-suit* CLI using [[GLI|http://davetron5000.github.com/gli/]] and how to create a project *driven by behavior* with [[Cucumber|http://cukes.info/]].
+
+== Install
+
+You can install from the sources by doing:
+
+  git clone git://github.com/juanje/rcalc.git
+  cd rcalc
+  rake gem
+  gem install pkg/rcalc-*.gem
+
+
+== Usage
+
+The usage is quite simple and you can get the help by typing `rcalc`. You'll get a info like this:
+
+
+  A simple command line calculator
+  
+  usage: rcalc [global options] command [command options]
+  
+  Version: 0.0.1
+  
+  Global Options:
+      --help - Show this message
+  
+  Commands:
+      divide    - Divide two numbers
+      help      - Shows list of commands or help for one command
+      multiply  - Multiply two numbers
+      substract - Substract to numbers
+      sum       - Sum two numbers
 
