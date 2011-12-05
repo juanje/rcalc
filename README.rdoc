@@ -18,7 +18,7 @@ You can install from the sources by doing:
 
 == Usage
 
-The usage is quite simple and you can get the help by typing `rcalc`. You'll get a info like this:
+The usage is quite simple and you can get the help by typing <tt>rcalc</tt>. You'll get a info like this:
 
 
   A simple command line calculator
@@ -36,4 +36,26 @@ The usage is quite simple and you can get the help by typing `rcalc`. You'll get
       multiply  - Multiply two numbers
       substract - Substract to numbers
       sum       - Sum two numbers
+
+== Testing features
+
+The features are written using <tt>Cucumber</tt> and are under the directory <tt>features</tt>.
+
+  features/
+  ├── adding.feature
+  ├── division.feature
+  ├── multiply.feature
+  ├── substract.feature
+  └── step_definitions
+      └── calculator_steps.rb
+
+
+To test the features you'll need to install the gem <tt>cucumber</tt> and <tt>gli</tt>. The best way to be sure you don't miss any dependency is by running:
+
+  bundle install
+
+Then you just need to run the features:
+
+  rake features
+
 
