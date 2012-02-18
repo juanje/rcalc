@@ -18,6 +18,7 @@ lib/rcalc_version.rb
   s.rdoc_options << '--title' << 'rcalc' << '--main' << 'README.rdoc' << '-ri'
   s.bindir = 'bin'
   s.executables << 'rcalc'
+  s.add_dependency('gli')
   s.add_development_dependency('rake')
   s.add_development_dependency('rdoc')
   s.add_development_dependency('aruba', '~> 0.4.6')
