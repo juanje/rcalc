@@ -5,12 +5,12 @@ end
 
 When /^the calculator (divide|substract) the (\d+) (?:by|to) the (\d+)$/ do |command, arg1, arg2|
   @output = `ruby bin/rcalc #{command} #{@first} #{@second}`.chomp
-  raise('Command failed!') unless $?.success?
+  $?.success?.should be_true
 end
 
 When /^the calculator (sum|multiply) them$/ do |command|
   @output = `ruby bin/rcalc #{command} #{@first} #{@second}`.chomp
-  raise('Command failed!') unless $?.success?
+  $?.success?.should be_true
 end
 
 # Common output check

@@ -1,7 +1,8 @@
 require 'rake/clean'
 require 'rubygems'
-require 'rake/gempackagetask'
+require 'rake/packagetask'
 require 'rdoc/task'
+require './lib/rcalc_version'
 
 Rake::RDocTask.new do |rd|
   rd.main = "README.rdoc"
@@ -16,7 +17,8 @@ end
 
 spec = eval(File.read('rcalc.gemspec'))
 
-Rake::GemPackageTask.new(spec) do |pkg|
+Rake::PackageTask.new(spec) do |pkg|
+  pkg.version = Rcalc::VERSION
 end
 
 require 'rake/testtask'
